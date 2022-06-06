@@ -32,6 +32,9 @@ export default function Detail({ show, setShow, id }) {
     <Modal show={show} onHide={handleClose} size="xl" centered>
       {data.id ? (
         <div className="primary-modal">
+          <button type="button" className="close-btn" onClick={handleClose}>
+            <i className="bi bi-x-lg"></i>
+          </button>
           <div className="modal-img">
             <img
               src={data.thumbnail.path + "/portrait_uncanny.jpg"}
